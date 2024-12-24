@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Hardik Ravriya, a web developer specializing in modern and responsive designs.">
+    <meta name="keywords" content="Web Developer, HTML, CSS, Portfolio, Projects, Hardik Ravriya">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #F4F4F4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFC107;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #FF5722;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #about, #projects, #contact {
+            background: #fff;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .project-card {
+            display: inline-block;
+            width: 300px;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Styling for the "View Project" links */
+        .project-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background-color: #FF5722;
+            transform: translateY(-3px);
+        }
+
+        .project-card a:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            background-color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form label {
+            text-align: left;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            padding: 0.75rem;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #FF5722;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        footer a {
+            color: #FFC107;
+            text-decoration: none;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .project-card {
+                width: 90%;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Hardik Ravriya</h1>
+        <p>Web Developer | Designer | Content Creator</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+   <!-- About Section -->
+   <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate front-end web developer with a strong foundation in HTML and CSS. I enjoy crafting clean, modern, and responsive web designs that enhance user experience. From structuring semantic HTML to styling with CSS, I strive to create visually appealing and functional websites. My journey started with building simple static pages, and now I focus on designing user-friendly interfaces and experimenting with advanced CSS techniques like animations, transitions, and flexbox layouts.</p>
+        <p>With a keen eye for design and attention to detail, I aim to bridge the gap between aesthetics and usability in web development. I am always eager to learn and explore new web technologies to improve my skills and deliver better solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="exp 13 output.JPG" alt="Project 1">
+            <h3>ID Card</h3>
+            <p>The ID Card project creates professional identification cards with key details like name, photo, and designation for easy recognition and security.</p>
+            <a href="Experiment 13.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="exp 9 output.JPG" alt="Table within table with image">
+            <h3>Table within table with image</h3>
+            <p>The Table within Table with Image project creates structured layouts with nested tables and images to present complex data in a clear, organized, and visually appealing manner.</p>
+            <a href="Experiment 9.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="exp 10 output -Time Table.JPG" alt="Time Table">
+            <h3>Time Table</h3>
+            <p>The Time Table project helps users efficiently organize and manage schedules, tasks, or classes to improve time utilization and productivity.</p>
+            <a href="Experiment 10.html" target="_blank">View Project</a>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hardik Ravriya | All Rights Reserved</p>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
