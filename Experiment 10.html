@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #D3D3D3;
+    color: #333333;
+}
+
+td {
+    color: #333333;
+}
+
+.cell {
+    background-color: #E8F7FC;
+}
+
+.short-recess {
+    background-color: #FFEB99; 
+}
+
+.long-recess {
+    background-color: #F8BBD0; 
+}
+
+.liberal-learning {
+    background-color: #E8F7FC; 
+}
+
+.empty {
+    background-color: #FFFFFF;
+    color: #B0B0B0; 
+}
+td:first-child {
+    background-color: #f0f0f0; 
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Time Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:15-9:15</td>
+                <td class="cell" rowspan="2">WAD-SB<br>WAD-MS<br>[A1-02]  </td> 
+                <td class="cell" rowspan="2">WAD-SB<br>WAD-MS<br>[A1-02]</td>
+                <td class="cell" rowspan="2">CHEM [SVD]<br>[A3-07] <br>PSLB[PL]<br>[A1-04] <br>BXEE [SDD]<br>[A3-04]</td>
+                <td class="empty"></td>
+                <td class="cell" rowspan="2">BXEE [SP]<br>[A2-02] <br>CHEM[PMC]<br>[D0-09] <br>PSLB [PL] <br>[A1-10]</td>
+                <td class="cell" rowspan="2">PSLB[PL]<br>[A1-10] <br>BXEE[SP]<br>[A2-02] <br>CHEM [PMC] <br>[D0-09]</td>
+            </tr>
+
+            <tr>
+                <td>9:15-10:15</td>
+                <td class="cell">CHEM [SRP]<br>[A3-02]</td>
+            </tr>
+
+            <tr>
+                <td>10:15-10:45</td>
+                <td colspan="6" class="short-recess">Short Recess</td>
+            </tr>
+            <tr>
+                <td>10:45-11:45</td>
+                <td class="cell">BXEE [MP]<br>[A1-06]</td>
+                <td class="cell">E.M-I [SJL]<br>[A1-06]</td>
+                <td class="cell">BXEE [MP]<br>[A2-05]</td>
+                <td class="cell">PSLB [PL]<br>[A3-11]</td>
+                <td class="cell">E.M-I [SJL]<br>[A3-02]</td>
+                <td class="cell" rowspan="2">PSLB [SDD]<br>[A3-11]</td>
+            </tr>
+            <tr>
+                <td>11:45-12:45</td>
+                <td class="cell">IKS [PDD]<br>[A1-06]</td>
+                <td class="cell">BXEE [MP]<br>[A1-06]</td>
+                <td class="cell">E.M-I [SJL]<br>[A2-05]</td>
+                <td class="cell">CHEM [SRP]<br>[A3-11]</td>
+                <td class="cell">IKS [PDD]<br>[A3-02]</td>
+                
+            </tr>
+            <tr>
+                <td>12:45-1:30</td>
+                <td colspan="6" class="long-recess">Long Recess</td>
+            </tr>
+            <tr>
+                <td>1:30-2:30</td>
+                <td class="cell" rowspan="2">P.D.-I [RB]<br>[A1-05]</td>
+                <td class="liberal-learning" rowspan="2">Liberal Learning<br>[ZCC Sports Ground]</td>
+                <td class="cell" rowspan="2">P.D.-I [RB]<br>[A2-05]</td>
+                <td class="cell">E.M-I [SJL]<br>[A3-11]</td>
+                <td class="cell">CHEM [SRP]<br>[A3-02]</td>
+                <td class="cell">GFM [SDD]<br>[A3-11]</td>
+            </tr>
+            <tr>
+                <td>2:30-3:30</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
